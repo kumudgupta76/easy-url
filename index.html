@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 40px;
+            background-color: #e3c4f3;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 10px;
+
+            color: #444;
+        }
+
+        .box {
+            background-color: #7bfaa1;
+            color: #444;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 150%;
+        }
+        .textarea{
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        /* .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+} */
+
+        /* .centered img {
+  width: 150px;
+  border-radius: 50%;
+} */
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box">
+            
+            <div class="split left">
+                <div class="centered" style="padding: 10px;">
+<div>Testing a tools</div>
+                    <textarea class="textarea" name="domain" id="domain" placeholder="Enterdomain here ..." style="width: 100%;min-height:50px" ></textarea><br>
+                    <textarea class="textarea" name="textarea" id="textarea" placeholder="This part encoded in Results" style="width: 100%;min-height:300px"
+                        onchange="onbclick()"></textarea><br>
+                    <textarea class="textarea" name="others" id="others" placeholder="others paramns" style="width: 100%;min-height:50px" ></textarea><br>
+                    <button onclick="onbclick()" style="float:right;height:20px;border-radius:5px;width: 150px;">Submit</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="split right">
+                
+                <div class="centered" style="padding: 10px;">
+<div>Results</div>
+                    <textarea class="textarea" name="final" id="final" style="width: 100%;min-height: 420px;"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
