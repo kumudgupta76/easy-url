@@ -8,3 +8,11 @@ function onbclick() {
     final.value = domain + encodeURI(data) + other;
     //console.log(domain, data, encodeURI(data));
 }
+
+funtion onChangeEncode() {
+    let encodedText = document.getElementById("encoded-text-area").value;
+    if(encodedText) {
+        decodedTextElement = document.getElementById("decoded-text-area");
+        decodedTextElement.value = decodeURI(encodedText);
+    }
+}
