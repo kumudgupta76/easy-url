@@ -9,7 +9,7 @@ function onbclick() {
     //console.log(domain, data, encodeURI(data));
 }
 
-funtion onChangeEncode() {
+function onChangeEncode() {
     let encodedText = document.getElementById("encoded-text-area").value;
     if(encodedText) {
         decodedTextElement = document.getElementById("decoded-text-area");
